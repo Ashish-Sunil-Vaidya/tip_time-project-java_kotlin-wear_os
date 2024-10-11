@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#272727"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/service_amt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/service_amt"
+        android:importantForAutofill="no"
+        android:inputType="text|numberDecimal"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:ignore="VisualLintWearMargin,VisualLintBounds,TouchTargetSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/tip_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:checkedButton="@id/tip_twenty_percent"
+        android:orientation="horizontal"
+        android:scaleX=".8"
+        android:scaleY=".8">
+
+        <RadioButton
+            android:id="@+id/tip_twenty_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="20% "
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/tip_fifteen_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="15% "
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/tip_ten_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="10%"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/round_tip"
+        android:layout_width="143dp"
+        android:layout_height="30dp"
+        android:gravity="center|start"
+        android:outlineProvider="none"
+        android:text="@string/round_value"
+        android:textAlignment="viewStart"
+        tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/calculate_tip_btn"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_btn"
+        android:text="@string/calculate"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip Result"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+</LinearLayout>

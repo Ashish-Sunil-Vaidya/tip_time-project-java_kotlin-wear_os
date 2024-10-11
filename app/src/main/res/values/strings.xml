@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tip Calculator WearOS</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">From the Square world,\nHello, %1$s!</string>
+    <string name="round_value">Round value?</string>
+    <string name="service_amount">Service Amount</string>
+    <string name="how_was_the_service">How was the service?</string>
+    <string name="_20">20% 😍</string>
+    <string name="calculate">Calculate</string>
+    <string name="_15">15% 😁</string>
+    <string name="service_amt">Service Amount</string>
+    <string name="_10">10% 😊</string>
+    <string name="_0">0</string>
+</resources>
